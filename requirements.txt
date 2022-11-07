@@ -1,4 +1,4 @@
-discord.py==2.0.0
-asyncio.py==3.4.3
-datetime.py==4.7
-pytz.py==2022.6
+discord==2.0.0
+asyncio==3.4.3
+datetime==4.7
+pytz==2022.6
