@@ -1,7 +1,10 @@
 import discord, asyncio, datetime, pytz
 import os
 
-client = discord.Client()
+intents = discord.Intents.default()
+intents.message_content = True
+
+client = discord.Client(intents=intents)
 
 @client.event
 async def on_ready(): # 봇이 실행되면 한 번 실행됨
