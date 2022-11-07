@@ -1,4 +1,5 @@
 import discord, asyncio, datetime, pytz
+import os
 
 client = discord.Client()
 
@@ -57,4 +58,5 @@ async def on_message(message):
         await message.channel.send (embed=embed)
 
 # 봇을 실행시키기 위한 토큰을 작성해주는 곳
-client.run('MTAzODQ0OTM3OTg2Mzk2OTg0Mw.GPqloF.sGErfzdHcW4sCDdrI3MD8kuZJhJES73HyB-Up4')
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
